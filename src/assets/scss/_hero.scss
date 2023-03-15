@@ -1,0 +1,44 @@
+.hero {
+    background-image: url(../images/mobile/image-header.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 550px;
+    text-align: center;
+    color: $White;
+    padding: 2rem 0;
+}
+
+.hero h1 {
+    font-size: 2.6rem;
+    font-family: $Fraunces;
+    letter-spacing: 6px;
+    margin: 2rem 0 2rem 0;
+    font-weight: 900;
+}
+
+.hero img {
+    margin: auto;
+    margin-top: 8rem;
+}
+
+@media screen and (min-width:768px) {
+    .hero {
+        background-image: url(../images/desktop/image-header.jpg);
+        background-position: 25% 75%;
+        min-height: calc(100vh - 120px);
+    }
+
+    .hero h1 {
+        font-size: 3.25rem;
+        font-family: $Fraunces;
+        letter-spacing: 6px;
+        margin: .5rem 0 2rem 0;
+        font-weight: 900;
+    }
+
+    .hero img {
+        margin: auto;
+        margin-top: 6rem;
+    }
+}

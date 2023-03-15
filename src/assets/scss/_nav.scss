@@ -1,0 +1,147 @@
+header {
+    background-color: hsl(200, 100%, 62%);
+    position: relative;
+
+}
+
+header .container {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-toggle {
+    cursor: pointer;
+}
+
+header .container nav ul {
+    position: absolute;
+    top: 140%;
+    right: -100%;
+    list-style: none;
+    background-color: $White;
+    padding: 2rem;
+    width: 80%;
+    max-width: 330px;
+    margin: auto;
+    text-align: center;
+    line-height: 3;
+    color: $Dark-grayish-blue;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: right .2s linear;
+}
+
+header .container nav ul.expanded {
+    right: 20px;
+}
+
+header .container nav ul li a {
+    color: $Dark-grayish-blue;
+    text-decoration: none;
+}
+
+header .container nav ul li:last-child a {
+    background-color: $Yellow;
+    border-radius: 30px;
+    color: $Very-dark-desaturated-blue;
+    font-family: $Fraunces;
+    text-transform: uppercase;
+    font-size: 1rem;
+    max-width: 150px;
+    margin: auto;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+header .container nav ul::before {
+    content: "";
+    border: 30px solid $White;
+    border-right-width: 20px;
+    border-right-color: transparent;
+    border-left-width: 20px;
+    border-left-color: $White;
+    border-top-width: 20px;
+    border-top-color: transparent;
+    border-bottom-width: 20px;
+    border-bottom-color: transparent;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: -18px;
+    right: -20px;
+}
+
+@media screen and (min-width:768px) {
+    header .container {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+
+    header .container nav ul {
+        position: relative;
+        top: 0;
+        right: 0%;
+        list-style: none;
+        background-color: transparent;
+        padding: 2rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        line-height: normal;
+        color: $White;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    header .container nav ul li a {
+        color: $White;
+        text-decoration: none;
+        margin-inline: 15px;
+        padding: 1rem;
+    }
+
+    header .container nav ul li:last-child a {
+        background-color: $White;
+        border-radius: 30px;
+        color: $Very-dark-desaturated-blue;
+        font-family: $Fraunces;
+        text-transform: uppercase;
+        font-size: 1rem;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 0;
+        padding: 1rem 2rem;
+    }
+
+    header .container nav ul li:last-child a:hover {
+        background-color: hsl(201, 88%, 75%);
+        color: $White;
+    }
+
+    header .container nav ul::before {
+        content: "";
+        display: none;
+
+    }
+
+
+}

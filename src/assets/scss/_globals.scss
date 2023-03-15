@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $barlow;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 1.5rem;
+    margin: auto;
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+h2,
+button {
+    font-family: $Fraunces;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    appearance: none;
+    border: none;
+}

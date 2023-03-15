@@ -1,0 +1,118 @@
+footer {
+    background-color: hsl(166, 34%, 71%);
+    padding: 3rem 2rem;
+
+    .logo img {
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 150px;
+        max-width: 150px;
+    }
+
+    .footer-nav {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: hsla(164, 29%, 31%, .8);
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .socials>div {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .socials>div:last-of-type {
+        margin-right: 0;
+    }
+
+    .socials .facebook {
+        background-image: url(../images/icon-facebook.svg);
+    }
+
+    .socials .facebook:hover {
+        background-image: url(../images/icon-facebook-white.svg);
+    }
+
+    .socials .instagram {
+        background-image: url(../images/icon-instagram.svg);
+    }
+
+    .socials .instagram:hover {
+        background-image: url(../images/icon-instagram-white.svg);
+    }
+
+    .socials .twitter {
+        background-image: url(../images/icon-twitter.svg);
+    }
+
+    .socials .twitter:hover {
+        background-image: url(../images/icon-twitter-white.svg);
+    }
+
+    .socials .pinterest {
+        background-image: url(../images/icon-pinterest.svg);
+    }
+
+    .socials .pinterest:hover {
+        background-image: url(../images/icon-pinterest-white.svg);
+    }
+
+    @media screen and (min-width:768px) {
+        .logo {
+            margin: auto;
+        }
+
+        .logo img {
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            width: 180px;
+            max-width: 180px;
+        }
+
+        .footer-nav {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            color: hsla(164, 29%, 31%, .8);
+        }
+
+        .footer-nav ul li {
+            margin-right: 100px;
+            font-size: 1.125rem;
+        }
+
+        .footer-nav ul li:hover {
+            color: $White;
+        }
+
+        .footer-nav ul li:last-of-type {
+            margin-right: 0;
+            font-size: 1.125rem;
+        }
+
+    }
+
+}
